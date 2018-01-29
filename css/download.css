@@ -1,0 +1,80 @@
+
+
+body {
+	/*width: 1242px;
+	height: 2208px;*/
+  background-color: #000;
+}
+.jiantou {
+	margin-top: 130px;
+	margin-left: 828px;
+}
+.wrap {
+	position: relative;
+	margin: 0px auto;  
+	width: 640px;
+	height: 1139px; 
+	background:url(../img/bg.jpg) no-repeat top center;
+ 	/*background-size:cover;  */
+}
+
+.btns {
+  padding-top: 356px;
+    z-index: 9999;
+    height: 97px;
+    width: 640px;
+}
+.btns a {
+    display: inline-block;
+    text-indent: -99999px;
+    width: 272px;
+    height: 73px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.btns a.android {
+ 	 margin-left: 36px; 
+    /* margin-right: 35px; */
+    background:url(../img/android.png) no-repeat;
+    // width: 640px;
+    // height: 80px;
+}
+
+
+.btns a.ios{
+    background: url(../img/ios.png) no-repeat;
+    margin-right: 42px;
+    /*margin-left: 59px;*/
+}
+
+#weixinMsg {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -120px;
+}
+#weixinMsg img {
+  width: 350px;
+  margin-top: 10px;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  height: 300px;
+
+}
+
+#shadow {
+    display: none;
+}
+#shadow{
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  background-color: rgb(0,0,0);
+  opacity: 0.5;
+  display: none;
+}
+

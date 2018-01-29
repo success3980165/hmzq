@@ -1,0 +1,152 @@
+body{
+	background: url(../img/bg.jpg) no-repeat top center;
+	font-family: "Microsoft YaHei";
+	margin: 0;
+	padding: 0;
+}
+input{
+	font-family: "Microsoft YaHei";
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #8f714b;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #8f714b;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #8f714b;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #8f714b;
+}
+.wrap{
+	width: 640px;
+	height: 1139px;
+
+	margin: 0 auto;
+}
+.down{
+	padding-top: 835px;
+}
+.left{
+	float: left;
+  margin-left: 95px;
+}
+.right{
+	float: right;
+  margin-right: 95px;
+}
+#weixinMsg {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -120px;
+}
+#weixinMsg img {
+  width: 350px;
+  margin-top: 10px;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  height: 300px;
+
+}
+#shadow {
+    display: none;
+}
+#shadow{
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(0,0,0);
+  opacity: 0.5;
+  display: none;
+}
+.lingqu{
+	text-align: center;
+	position: relative;
+	top: 685px;
+}
+#cover{
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	display: none;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	background-color: #000;
+}
+.libaozhanshi{
+	display: none;
+	background-image: url(../img/libaozhanshi.png);
+	z-index: 101;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 542px;
+	height: 252px;
+	background-size: 542px 252px;
+	margin: -126px 0 0 -271px;
+	text-align: center;
+}
+.lijilingqu{
+	position: relative;
+    top: 187px;
+	width: 222px;
+	height: 62px;
+	display: inline-block;
+}
+.close_dialog{
+	position: absolute;
+    left: 500px;
+    top: -10px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.lingqusuccess{
+	display: none;
+	background-image: url(../img/lingquchenggong.png);
+	z-index: 101;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 542px;
+	height: 208px;
+	background-size: 542px 208px;
+	margin: -104px 0 0 -271px;
+}
+.libaoma{
+    position: absolute;
+    top: 88px;
+    left: 177px;
+    font-size: 19px;
+    width: 165px;
+    height: 37px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    // color: #dd7704;
+    color: black;
+    outline: none;
+    padding-left: 10px;
+}
+.copy{
+	position: absolute;
+    left: 365px;
+    top: 88px;
+	width: 90px;
+	height: 37px;
+	display: inline-block;
+}

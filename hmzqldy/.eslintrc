@@ -1,0 +1,20 @@
+{
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "curly": ["error", "all"],
+    "eqeqeq": ["error", "always"],
+    "no-alert": "error",
+    "no-console": "warn",
+    "semi": ["error", "always"],
+    "space-before-function-paren": "off"
+  },
+  "globals": {
+    "$": true,
+    "axios": true,
+    "swal": true,
+    "Vue": true
+  },
+  "env": {
+    "browser": true
+  }
+}

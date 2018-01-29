@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=750,target-densitydpi=375, minimum-scale=0.5, maximum-scale=1,user-scalable=no">
+  <title>豪门足球风云预约页</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/yuyue.css?v=0.0.1">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="http://activity.api.hulai.com/static/open/js/hulai-activity2-0.0.1.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="yuyue">
+      
+      <div>
+        <input id="mobile" class="phoneNum white" type="text" name="mobile" value="" placeholder="输入手机号码" onfocus="this.placeholder=''" onblur="this.placeholder='输入手机号码'">
+        <span onclick="saveRecord()" class="now-yuyue"><img src="img/yuyue.png?v=0.0.1" alt=""></span>
+      </div>
+      <div class="clear"></div>
+      <div class="people-text">已有<span id="total" style="color:#da251c;"></span>人预约</div>
+      <div id="yz">
+        <input id="smscode" type="text" name="yanzheng" value="" placeholder="输入验证码" onfocus="this.placeholder=''" onblur="this.placeholder='输入验证码'">
+        <img id="img" style="height:62px;width:145px;position:relative" src="img/sms_code.png">
+      </div>
+    </div>
+    <div class="btns">
+      <a class="ios" href="https://tracking.hoolai.com/tracking/3804/"><img src="img/ios.png?v=0.0.1" alt=""></a>
+      <a class="android" href="http://zcfy.dl.hoolaigames.com/web/hm/380/hmzqdqd.apk"><img src="img/and.png?v=0.0.1" alt=""></a>
+    </div>
+    <!-- <img id="video" src="img/video-btn.png"> -->
+    <!-- <div class="footer">
+      <span>The use of images and names of the football players in this game is under license </span>
+      <span>from FIFPro Commercial Enterprises BV.</span>
+      <span>FIFPro is a registered trademark of FIFPro Commercial Enterprises BV.</span>
+    </div> -->
+  </div>
+
+  <!-- 蒙层 -->
+  <div id="cover"></div>
+  <!-- 视频 -->
+  <div class="middle video-show" style="display: none;left: 50%;margin-left: -375px;">
+    <img src="img/close.png" class="close_video">
+    <video id="media" src="http://cdn.hmzqfy.hulai.com/luodi.mp4" width="750px" height="360px" controls="controls">
+            </video>
+  </div>
+  <!-- 提示信息 -->
+  <div class="middle tishi">
+    <span class="close_tishi"></span>
+  </div>
+
+  <script type="text/javascript" src='js/yuyue.js'></script>
+</body>
+
+</html>

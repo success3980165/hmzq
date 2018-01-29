@@ -1,0 +1,92 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+  border: none;
+	width: 640px;
+	height: 1344px;
+	margin: auto;
+  max-width: 640px;
+  color: #fff;
+	font-family: "Microsoft YaHei";
+}
+.bd{
+	width: 640px;
+	height: 1344px;
+	background-image: url('../img/qylb.jpg');
+	background-repeat: no-repeat;
+}
+.list{
+	width: 600px;
+	height: 350px;
+	margin: 0px auto;
+	position: relative;
+  top: 99px;
+}
+.sou{
+	width: 600px;
+	height: 35px;
+}
+.sou input{
+	border:2px solid;
+  border-radius:10px;
+	font-size: 19px;
+	margin-left: 5px;
+	position: relative;
+  top: -12px;
+}
+.sou img{
+	margin-left: 20px;
+}
+.xialak{
+	font-size: 19px;
+  line-height: 3.3;
+}
+.an1,.an2 span{
+	margin-left: 54px;
+}
+.an1 img{
+	position: relative;
+  top: 11px;
+  right: -38px;
+}
+.an1 select{
+	margin-left: 35px;
+}
+.an2 input{
+	border-radius:10px;
+	margin-left: 35px;
+	font-size: 19px;
+}
+.an3 span{
+	margin-left: 16px;
+}
+.an3 select{
+	margin-left: 35px;
+}
+.player{
+	width: 600px;
+	height: 763px;
+	margin: 0px auto;
+	position: relative;
+  top: 210px;
+	overflow-y: auto;
+}
+.player img{
+	margin-left: 62px;
+  margin-top: 15px;
+}
+.pt1{
+	width: 292px;
+	height: 381px;
+	float: left;
+}
+.pt1 p{
+	font-size: 26px;
+  text-align: center;
+}
+select{
+border-radius:10px;
+font-size: 19px;
+}

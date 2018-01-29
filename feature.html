@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>豪门足球风云-官方网站- FIFPro正版授权-世界级3D足球手游</title>
+	<meta name="keywords" content="豪门足球风云、豪门足球、实况足球、fifa17、最佳阵容、世界足球、体育足球、梦幻足球、pescm、soccer、热血足球、足球游戏2017、欧冠足球、欧冠亚冠、欧冠游戏、点球大战、足球游戏、足球直播、足球彩票、足球比分、足球经理、足球大师、足球竞猜、足球小将、fm足球经理、梦幻足球经理、单机足球游戏">
+	<meta name="description" content="《豪门足球风云》采用全球领先的动作捕捉技术，拥有2000秒动作捕捉数据，真实还原球员技术动作；景深和眩光技术打造的高品质画面，让玩家体验亲临比赛现场般的感受；独特的”英雄时刻”玩法，让玩家切身参与每次传突射的决策！是一款真正为全世界足球爱好者量身定制的高品质足球经理手游。">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=0.0.6">
+	<link rel="stylesheet" type="text/css" href="css/index.css?v=0.0.6">
+	<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="//page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+	<script type="text/javascript" src="http://activity.api.hulai.com/static/open/js/hulai-activity-0.0.1.js"></script>
+	<script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js?v=0.0.6"></script>
+  <script type="text/javascript" src="js/moment.js"></script>
+	<script type="text/javascript" src="js/yuyue.js?v=0.0.6"></script>
+
+	<style type="text/css">
+		/*body{
+	  background: url(../img/background4.jpg) no-repeat top center;
+	  height: 2104px;
+	}*/
+
+		:-moz-placeholder {
+			/* Mozilla Firefox 4 to 18 */
+			color: #dd7704;
+			opacity: 1;
+		}
+
+		 ::-moz-placeholder {
+			/* Mozilla Firefox 19+ */
+			color: #dd7704;
+			opacity: 1;
+		}
+
+		input:-ms-input-placeholder {
+			color: #dd7704;
+			opacity: 1;
+		}
+
+		input::-webkit-input-placeholder {
+			color: #dd7704;
+			opacity: 1;
+		}
+
+		input::-ms-input-placeholder {
+			text-align: center;
+		}
+
+		input::-webkit-input-placeholder {
+			text-align: center;
+		}
+		.active a {
+    background-color: #999999;
+    color: #f9e4c3;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+		}
+		.page li {
+			display: inline-block;
+	    width: 30px;
+	    height: 25px;
+	    font-size: 15px;
+	    text-align: center;
+	    padding-top: 5px;
+	    cursor: pointer;
+	    margin-right: 10px;
+	    font-size: 16px;
+		}
+		.page {
+			text-align: center;
+			padding-top: 40px;
+		}
+		.page li a {
+			color:rgb(85, 96, 122);
+		}
+		[v-cloak] {
+    	display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="app1 app2" id="appp" v-cloak>
+		<ul class="nav1">
+			<li><a href="index.html">官网首页</a></li>
+			<li><a href="latestActivity.html#422">最新活动</a></li>
+			<li><a href="strategy.html#424">游戏攻略</a></li>
+			<li><a href="feature.html#426" :style="line3">游戏特色</a></li>
+			<li class="player">玩家交流
+				<div class="commit" style="display:none">
+					<a style="border:none;padding:5px" href="http://tieba.baidu.com/f?kw=%E8%B1%AA%E9%97%A8%E8%B6%B3%E7%90%83%E9%A3%8E%E4%BA%91&fr=home" target="_Blank">【玩家论坛】</a>
+					<a style="border:none;padding:5px" href="//shang.qq.com/wpa/qunwpa?idkey=163b6e0e21a1df32aec12fb1c271de32d6a5ab46432463faf085be8a949f4c5c">【玩家Q群】</a>
+					<a style="border:none;padding:5px" href="http://weibo.com/u/2541983545">【官方微博】</a>
+				</div>
+			</li>
+			<li class="self-help">自助服务
+				<div class="sever" style="display:none">
+					<a style="border:none;padding:5px" href="javascript:void(0)" @click="phoneClick()">【在线客服】</a>
+					<a style="border:none;padding:5px" href="article.html#115">【礼包兑换】</a>
+				</div>
+			</li>
+		</ul>
+		<div class="header">
+			<div class="header_top">
+				<div class="radio">
+					<img src="img/yellowbtn.png" onclick="autoPlay()" @click="videoClick()" style="margin-left: 50px">
+				</div>
+				<div class="header_top_last">
+					<span style="font-size: 20px;font-family: '微软雅黑';color: white;padding-left: 35px;">扫码下载</span>
+					<img src="img/zuqiu2.gif?v=0.0.6" alt="" style="position: relative;top: 83px;left: -114px;padding-left: 6px;margin-left: 6px;">
+					<div class="header_btn">
+						<a href="https://tracking.hoolai.com/tracking/8533/" class="app"><img src="img/appstore.png" alt=""></a>
+						<a href="http://zcfy.dl.hoolaigames.com/web/hm/426/hmzqgw26.apk" class="and"><img src="img/android1.png" alt=""></a>
+						<a href="http://dlied6.qq.com/invc/xfspeed/qqpcmgr/download/GameDownload_com.tencent.tmgp.hmzqfy_113.exe"><img src="img/pc.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="xuanfu">
+			<div class="gongzonghao">
+				<div class="erweima">
+					<img src="img/gongzhonghao.jpg?v=0.0.6" alt="" style="width: 102px;text-align: center;margin-top: 7px;">
+				</div>
+				<div class="xuanfu_right">
+					<a href="http://tieba.baidu.com/f?kw=%E8%B1%AA%E9%97%A8%E8%B6%B3%E7%90%83%E9%A3%8E%E4%BA%91&fr=home" target="_Blank">
+						<p>百度贴吧</p>
+					</a>
+					<a href="javascript:void(0)" @click="phoneClick()">
+						<p>懂球帝</p>
+					</a>
+					<a href="http://weibo.com/u/2541983545">
+						<p>新浪微博</p>
+					</a>
+					<a href="javascript:void(0)" @click="choubei()">
+						<p>官方论坛</p>
+					</a>
+					<!-- <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=42a89258a5e4c002b6bc2fa9cd151dbeb7365f07a51bddc6266bbc2eeb4a40ad"><p>官方QQ群</p></a> -->
+				</div>
+				<div class="qq">
+					<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=163b6e0e21a1df32aec12fb1c271de32d6a5ab46432463faf085be8a949f4c5c"><img src="img/qq.png" alt=""></a>
+				</div>
+				<div class="top">
+					<img src="img/top1.png?v=0.0.6" alt="">
+				</div>
+			</div>
+			<!-- <div class="top">
+	          <a href="javascript:void(0)"><img src="img/top.png" alt=""></a>
+	        </div> -->
+			<div style="text-align:center;">
+				<!-- 不要忘记在img后面加 data-toggle="modal" data-target="#myModal" -->
+				<img src="img/gift.png?v=0.0.6" alt="" data-toggle="modal" data-target="#myModal">
+			</div>
+		</div>
+		<div class="s_mid content_list">
+			<div></div>
+			<div class="s_top">
+				<ul class="top_list s_top_list">
+					<li @mouseenter="enterList('游戏特色',1,1)" v-bind:class="{li_line: gameFeature}">游戏特色</li>
+					<li @mouseenter="enterList('新手指南',1,1)" v-bind:class="{li_line: zhinan}">新手指南</li>
+					<li @mouseenter="enterList('进阶玩法',1,1)" v-bind:class="{li_line: wanfa}">进阶玩法</li>
+					<li @mouseenter="enterList('游戏秘籍',1,1)" v-bind:class="{li_line: miji}">游戏秘籍</li>
+				</ul>
+				<div class="s_box">
+					<!-- <ul class="list_message"></ul> -->
+					<ul style="margin-right: 12px;padding-top: 8px;height:300px;">
+              <li v-for="item in listData" style="margin-left: 24px;margin-top: 10px;" :style="line">
+               <!--  <span class="left_classify fl"><span>【</span>{{listName}}<span>】</span></span> -->
+                <span style="margin-left:15px;width: 140px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                <a :href="item.hrefVal" style="font-size: 16.94px;color: #55607a;">{{item.title}}</a></span>
+                <span class="fr" style="margin-right:10px;font-size: 16.94px;color: #55607a;">{{item.listDataTime}}</span>
+              </li>
+          </ul>
+
+          <ul class="page" v-show="more1">
+              <li v-if="cur>1"><a v-on:click="cur--,btnClick(cur)"><</a></li>
+              <li v-if="cur==1"><a class="banclick"><</a></li>
+              <li v-for="index in indexs"  v-bind:class="{ 'active': cur == index }">
+                <a v-on:click="btnClick(index)">{{ index }}</a>
+              </li>
+              <li v-if="cur!=all"><a v-on:click="cur++,btnClick(cur)">></a></li>
+              <li v-if="cur == all"><a class="banclick">></a></li>
+          </ul>
+
+				</div>
+<!-- 				<div class="footer s_footer">
+					<p class="bottom_text">The use of images and names of the football players in this game is under license from FIFPro Commercial Enterprises BV.</p>
+					<p class="bottom_text2">FIFPro is a registered trademark of FIFPro Commercial Enterprises BV.</p>
+					<p class="bottom_text">地址：北京市朝阳区天辰东路国家会议中心北区四层 京ICP备11034336号-1 网络文化经营许可证-文网文[2011]0744-272号 京公网安备11010502022348</p>
+					<p class="bottom_text2">Copyright © 2012 Hoolai Games. All Rights Reserved 互爱互动（北京）科技有限公司版权所有 010-62662622</p>
+				</div> -->
+				      <div class="footer">
+        <div class="ui inverted segment">
+          <div class="ui c_center">
+            <p class="bottom_text">The use of images and names of the football players in this game is under license from FIFPro Commercial Enterprises BV.</p>
+            <p class="bottom_text2">FIFPro is a registered trademark of FIFPro Commercial Enterprises BV.</p>
+            <p>
+              温馨提示：抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当，适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活
+              <br/>
+              本网站所有游戏仅适合于年满18周岁以上的用户。如果您未满18周岁，不建议您注册并使用本网络游戏服务；
+              <br/>
+              如果您坚持使用，请您务必加入本网络游戏防沉迷系统进行实名注册，同时我们将会按照您法定监护人的需求提供您在本网络游戏中的信息。
+              <br/>
+              您在使用本网络游戏服务之前已经明确知晓网络游戏可能给您带来的一切潜在威胁，包括长时间游戏可能不利于您的身心健康等。为了您的健康请您合理的使用本网络游戏。
+            </p>
+
+            <p>京ICP备11034336号-1 |
+              <a target="_blank" href="http://www.hulai.com/assets/files/huai_wenwangwen.jpg">
+                <font color="#ffffff">京网文[2011]0744-272号 |</font>
+              </a>
+              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502033250">
+                <font color="#ffffff"><img src="http://www.beian.gov.cn/img/ghs.png">京公网安备 11010502033250号 |</font>
+              </a>
+              <a target="_blank" href="http://www.hulai.com/assets/files/huai_xukezheng.pdf">
+                <font color="#ffffff">（总）网出证（京）字第095号 |</font>
+              </a>
+              <a href="#">
+                <font color="#ffffff">ICP证书号:京B2-20171148</font>
+              </a>
+            </p>
+            <p>
+              <a class="c_white" target="_blank" href="http://www.hulai.com/server">服务协议 |</a>
+              <a class="c_white" target="_blank" href="http://www.hulai.com/privacy">隐私权保护声明 |</a>
+              <a class="c_white" target="_blank" href="http://www.hulai.com/minors">未成年人家长监护 |</a>
+              <a class="c_white" target="_blank" href="http://www.hulai.com/law">法律声明 |</a>
+              <a class="c_white" target="_blank" href="http://www.hulai.com/dispute">纠纷、投诉</a>
+            </p>
+            <p>
+              北京市石景山区八大处高科技园区西井路3号3号楼9229房间 010-62662622
+            </p>
+            <p>
+              Copyright © 2015 Hoolai Games. All Rights Reserved | 互爱互动（北京）科技有限公司版权所有
+            </p>
+          </div>
+        </div>
+      </div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="newPerson">
+					<div class="cross" data-dismiss="modal" aria-label="Close"><img src="img/cross.png?v=0.0.6" alt=""></div>
+					<div class="new_receive">
+						<img src="img/receive.png?v=0.0.6" alt="">
+					</div>
+				</div>
+				<div class="mengceng">
+					<div class="cross" data-dismiss="modal" aria-label="Close"><img src="img/cross.png" alt=""></div>
+					<input id="mobile" type="text" name="mobile" style="width:369px;height:47px;background-color:#d7d7d7;position: relative;top: 87px;left: 182px;border: 2px solid white;font-size: 26px;text-align: center;">
+					<input id="imgcode" type="text" name="smscode" style="width:217px;height:47px;background-color:#d7d7d7;border: 2px solid white;position: relative;top: 152px;left: -192px;font-size: 26px;text-align: center;">
+					<!-- <div class="yanzhengma" onclick="sendSms(this)">获取验证码</div> -->
+					<input type="button" class="yanzhengma" onclick="sendSms(this)" name="name" value="获取验证码">
+					<div class="receive" onclick="saveRecord()">
+						<img src="img/clickreceive.png?v=0.0.6" alt="">
+					</div>
+				</div>
+				<div class="overlay">
+					<img src="img/phone.png?v=0.0.6" alt="" class="phone">
+					<img src="img/alert.png?v=0.0.6" alt="" class="alert">
+					<img src="img/receive1.png?v=0.0.6" alt="" class="receive1">
+				</div>
+				<div class="libao">
+					<div class="libao_title">
+						<!-- <p>恭喜! 领取成功!</p> -->
+						<div class="cross title_cross" data-dismiss="modal" aria-label="Close"><img src="img/cross.png?v=0.0.6" alt=""></div>
+					</div>
+					<div class="libao_show">
+						<span class="libao_one">礼包码:</span>
+						<input type="text" class="libao_two" readonly="readonly">
+						<span class="libao_three" onclick="copytxt()">点击复制</span>
+						<!-- <span class="libao_four">进入游戏后，在主页面点击更多-</span>
+						<span class="libao_four">礼包兑换，进行激活。</span> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="display:none" class="videoblock">
+			<div id="cover" @click="videoClose()" v-show="cover"></div>
+			<div class="video_player" v-show="video_play" onclick="stopPlay()">
+				<img src="img/close.jpg?v=0.0.6" class="fr cursor_p" @click="videoClose()">
+				<video id="media" width="710" height="400" src="http://cdn.hmzqfy.hulai.com/luodi.mp4" controls="controls">
+	            无法支持html5浏览器
+	          </video>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src="js/mainvue.js?v=0.0.6"></script> -->
+	<script type="text/javascript" src="js/jointly.js?v=0.0.6"></script>
+	<script type="text/javascript" src="js/index.js?v=0.0.6"></script>
+	<!-- <script type="text/javascript" src="js/newsList.js?v=0.0.6"></script>
+	<script type="text/javascript" src="js/common.js?v=0.0.6"></script> -->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?ddaec06cf791b2e9274f9fc5603e6a2c";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script type="text/javascript">
+    function autoPlay() {
+      var media = document.getElementById("media");
+      media.play();
+      console.log("视频自动播放");
+    }
+
+    function stopPlay() {
+      var media = document.getElementById("media");
+      media.pause();
+      console.log("视频暂停播放");
+    }
+  </script>
+
+</body>
+
+</html>

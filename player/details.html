@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=640,target-densitydpi=320, minimum-scale=0.5, maximum-scale=2,user-scalable=0">
+
+  <title>豪门足球风云</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="css/details.css?v=20171125">
+
+</head>
+
+<body>
+  <div class="bd1" id="app">
+    <div class="jiben">
+      <div class="k1">
+        <img :src="player['卡片图片']">
+      </div>
+      <div class="k2"><br><br><br>
+        <h3><p>{{player['中文名']}}</p></h3>
+        <p>{{player['英文名']}}</p>
+        <p>国籍：{{player['国籍']}}</p>
+        <p>身高：{{player['身高']}}cm</p>
+        <p>出生年月：{{player['出生年月']}}</p>
+      </div>
+    </div>
+
+    <div class="jiben1">
+      <div class="k3"><br>
+        <h2><p>场上位置</p></h2>
+        <p>{{player['场上位置']}}</p>
+        <br><br>
+        <p><img :src="player['位置图片']"></p>
+      </div>
+      <div class="k4"><br>
+        <h2><p>最佳拍档</p></h2>
+        <p>{{player.partner['中文名']}}</p>
+        <br>
+        <p> <a :href="'details.html?id='+player.partner.id">
+          <img :src="player.partner['卡片图片']" style=" width: 100px;"></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="shuxing">
+      <div class="x3">
+        <div class="x1">
+          <span>进阶次数和等级</span><select v-model="level" style="width:320px; height:35px;">
+        <option v-for="option in levelArr" v-bind:value="option">进阶{{option}}次{{option*10}}级</option>
+        </select>
+        </div>
+        <div class="x2" v-show="level>3 & zhuanshenLevelArr.length>0">
+          <span>转生次数</span><select v-model="zhuanshenLevel" style="width:320px; height:35px;">
+        <option v-for="option in zhuanshenLevelArr" :value='option'>转生{{option}}次</option>
+        </select>
+        </div>
+        <div class="x1" v-show="level>1">
+          <div id="example-4">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;技能效果选择</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" id="one" value="One" v-model="hasJinengA">
+            <label for="one">满全神贯注</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input type="checkbox" id="two" value="Two" v-model="hasJinengB">
+            <label for="two">有搭档</label>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="">
+        <span>初始属性</span>
+        <span v-for="num,index in chujiAttr" class="attr-span">{{index+1}}技能:{{num}},  </span>
+      </div>
+
+      <div class="">
+        <span>总共属性</span>
+        <span v-for="num,index in totalAttr" class="attr-span">{{index+1}}技能:{{num}},  </span>
+      </div> -->
+      <canvas id="myChart"></canvas>
+      <br>
+      <div class="shuju">
+        <div class="" v-show="level>0">
+          <span>升级增加:</span>
+          <span v-for="num,index in shenjiAttr" class="attr-span">{{labels[index]}}-{{num}}  </span>
+        </div>
+        <div class="" v-show="level>3 & zhuanshenLevel>0">
+          <span>转生增加:</span>
+          <span v-for="num,index in zhuanshenAttr" class="attr-span">{{labels[index]}}-{{num}}  </span>
+        </div>
+        <div class="" v-show="jinengNum>0">
+          <span>技能增加:</span>
+          <span v-for="num,index in jinengAttr" class="attr-span">{{labels[index]}}-{{num}}  </span>
+        </div>
+      </div>
+    </div>
+    <div class="jineng">
+      <div class="y1" v-for="item in jinengList">
+        <p><img :src="item['技能图片']" :alt="item['技能名称']"></p>
+        <p>{{item['技能名称']}}</p>
+      </div>
+    </div>
+    <div class="huaxue">
+      <!-- <span style=" position: relative; top: 188px; left: -104px; font-size: 20px;"><b>化学</b></span> -->
+      <div class="hx1" v-for="item,index in huaxueList">
+        <p><img src="img/zhixian.png" alt="" style=" width: 150%; left: -200px; position: relative;"></p>
+        <p>化学{{index+1}}：{{item['化学名称']}}</p>
+        <div class="hx2" v-for="huaxue in item.players">
+          <p><a :href="'details.html?id='+huaxue.id"> <img :src="huaxue['卡片图片']" :alt="huaxue['中文名']" style=" width: 80px; height:128;"></a></p>
+          <p>{{huaxue['中文名']}}</p>
+        </div>
+      </div>
+      <div class="bt">
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://page.hulai.com/static/open/js/jquery.min.js"></script>
+  <script type="text/javascript" src="https://page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="https://page.hulai.com/static/open/js/hulai-cms-0.0.1.js"></script>
+  <script type="text/javascript" src="https://page.hulai.com/static/open/js/lodash.min.js"></script>
+  <script type="text/javascript" src="js/Chart.min.js"></script>
+  <!-- <script type="text/javascript" src="http://www.chartjs.org/samples/latest/utils.js"></script> -->
+  <script type="text/javascript" src="js/changeAttr.js?v=20171125"></script>
+  <script type="text/javascript" src="js/playerCommon.js?v=20171125"></script>
+  <script type="text/javascript" src="js/details.js?v=20171125"></script>
+  <script type="text/javascript" src="js/randa.js"></script>
+</body>
+
+</html>
